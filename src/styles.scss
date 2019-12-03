@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add utils styles to this file, and also import other style files */
+
+@charset 'utf-8';
+
+//utils
+@import 'assets/scss/utils/functions';
+@import 'assets/scss/utils/mixins';
+@import 'assets/scss/utils/utils';
+@import 'assets/scss/utils/breakpoints';
+@import 'assets/scss/utils/animations';
+
+//settings
+@import 'assets/scss/settings';
+
+//libs
+@import 'assets/scss/utils/libs';
+
+// @import 'global/typography';
+@import 'assets/scss/utils/fonts';
+
+//grid
+@import "assets/scss/grid-framework/grid-framework";
+@import "assets/scss/grid-framework/grid";
+@import 'assets/scss/grid';
+
+//common
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $font-family;
+  font-size: 13px;
+  line-height: 14px;
+  //color: red;
+  background-color: $gray;
+}
+
+//components
