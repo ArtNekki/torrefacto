@@ -1,0 +1,23 @@
+.link {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  text-decoration: none;
+  border-bottom: 1px solid $white;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
+
+  &--no-decoration {
+    border-color: transparent;
+  }
+
+  &--dashed {
+    border-bottom-style: dashed;
+  }
+}

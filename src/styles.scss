@@ -11,6 +11,7 @@
 @import 'assets/scss/utils/animations';
 
 //settings
+@import 'variables';
 @import 'assets/scss/settings';
 
 //libs
@@ -34,10 +35,11 @@ html,
 body {
   height: 100%;
   font-family: $font-family;
-  font-size: 13px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 22px;
   //color: red;
   background-color: $gray;
 }
 
 //components
+@import "assets/scss/components/link";
