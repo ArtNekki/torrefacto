@@ -9,7 +9,19 @@
   }
 
   &-account {
+    display: inline-block;
     color: $white;
     text-align: right;
+  }
+
+  &-cart {
+
+    svg {
+      fill: red;
+    }
+  }
+
+  &-counter {
+    margin-left: 20px;
   }
 }
