@@ -1,6 +1,6 @@
 <div class="gallery">
   <div class="gallery-content">
-    <a href="#" class="gallery-slide" [class.gallery-slide--active]="activeSlide === slide" *ngFor="let slide of slides"
+    <a href="#" class="gallery-slide" (swipeLeft)="prevSlide()" (swipeRight)="nextSlide()" [class.gallery-slide--active]="activeSlide === slide" *ngFor="let slide of slides"
        [ngStyle]="{'background-image': setImage(slide.src)}">
       <span class="gallery-sub-title" *ngIf="slide.sub">{{ slide.sub }}</span>
       <h2 class="gallery-title">{{ slide.title }}</h2>
